@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Lombardi Starter`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Cassio Cardoso`,
+      summary: `a guy that loves football`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `A starter website for football teams`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `cassiocardoso`,
     },
   },
   plugins: [
@@ -60,11 +60,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Lombardi Starter`,
+        short_name: `🏈 Lombardi`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#f04`,
         display: `minimal-ui`,
         icon: `content/assets/gatsby-icon.png`,
       },
@@ -76,8 +76,7 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+		`gatsby-plugin-offline`,
+		`gatsby-plugin-netlify-cms`,
   ],
 }
