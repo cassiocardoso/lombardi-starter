@@ -42,9 +42,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             marginBottom: rhythm(1),
           }}
         />
-        <footer>
-					post footer
-        </footer>
+        <footer>post footer</footer>
       </article>
 
       <nav>
