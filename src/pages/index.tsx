@@ -20,7 +20,8 @@ type Data = {
         frontmatter: {
           title: string
           date: string
-          description: string
+					description: string
+					url: string
         }
         fields: {
           slug: string
@@ -48,7 +49,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
                   marginBottom: rhythm(1 / 4),
                 }}
               >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                <Link style={{ boxShadow: `none` }} to={`/blog/${node.frontmatter.url}`}>
                   {title}
                 </Link>
               </h3>
@@ -87,7 +88,8 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
-            description
+						description
+						url
           }
         }
       }
