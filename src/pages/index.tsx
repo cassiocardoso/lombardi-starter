@@ -1,10 +1,10 @@
 // Gatsby supports TypeScript natively!
-import React from "react"
-import { PageProps, Link, graphql } from "gatsby"
+import React from 'react'
+import { PageProps, Link, graphql } from 'gatsby'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import { rhythm } from '../utils/typography'
 
 type Data = {
   site: {
@@ -19,8 +19,8 @@ type Data = {
         frontmatter: {
           title: string
           date: string
-					description: string
-					url: string
+          description: string
+          url: string
         }
         fields: {
           slug: string
@@ -86,8 +86,8 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
-						description
-						url
+            description
+            url
           }
         }
       }
