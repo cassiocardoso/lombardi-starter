@@ -13,7 +13,7 @@ Eu dou dinheiro pra minha filha. Eu dou dinheiro pra ela viajar, então é... é
 
 Todos as descrições das pessoas são sobre a humanidade do atendimento, a pessoa pega no pulso, examina, olha com carinho. Então eu acho que vai ter outra coisa, que os médicos cubanos trouxeram pro brasil, um alto grau de humanidade.
 
-![Theme preview](/img/theme-preview.png "Nevermore theme preview")
+![Theme preview](/img/theme-preview.png 'Nevermore theme preview')
 
 ## _Futebas_
 
