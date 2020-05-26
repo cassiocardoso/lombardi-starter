@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
 import { DesktopBlogRoll } from './Desktop'
 import { MobileBlogRoll } from './Mobile'

@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 import { Heading, Image } from 'grommet'
 
-import { customTheme } from '../../theme'
-
 export const StyledImage = styled(Image)`
   margin: 0;
 `
