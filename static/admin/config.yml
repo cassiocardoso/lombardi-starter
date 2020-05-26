@@ -17,18 +17,18 @@ collections:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Data de publicação", name: "date", widget: "datetime" }
 			- { label: "Descrição", name: "description", widget: "string" }
-			- { label: "URL", name: "URL", widget: "string" }
+      - { label: "URL", name: "URL", widget: "string" }
       - { label: "Texto", name: "body", widget: "markdown" }
-	- name: "pages"
-		label: "Páginas"
-		delete: false
-		editor:
-			preview: true
-		files:
-			- file: "content/pages/about.md"
-				label: "Sobre nós"
-				name: "about-page"
-				fields:
-					- { label: "Slug", name: "slug", widget: "hidden", default: "about" }
-					- { label: "Título", name: "title", widget: "string" }
-					- { label: "Texto", name: "body", widget: "markdown" }
+  - name: "pages"
+    label: "Páginas"
+    delete: false
+    editor:
+      preview: true
+    files:
+      - file: "content/pages/about.md"
+        label: "Sobre nós"
+        name: "about-page"
+        fields:
+          - { label: "Slug", name: "slug", widget: "hidden", default: "about" }
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Texto", name: "body", widget: "markdown" }
