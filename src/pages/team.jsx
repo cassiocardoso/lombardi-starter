@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { Box, Heading, Table, TableHeader, TableBody, TableRow, TableCell } from 'grommet'
+import { Heading } from 'grommet'
 
 import Layout from '../layout'
 import { Banner } from '../components/Banner'
@@ -8,12 +8,11 @@ import { ContentContainer } from '../components/ContentContainer'
 import { TeamTable } from '../components/TeamTable'
 
 const TeamPage = ({ data }) => {
-	const { frontmatter, html } = data.markdownRemark
-	const { coaches, players } = frontmatter
+	const { coaches, players, title } = data.markdownRemark.frontmatter
 
 	return (
 		<Layout>
-			<Banner title={data.markdownRemark.frontmatter.title} />
+			<Banner title={title} />
 			<ContentContainer>
 				<Heading level="2">Jogadores</Heading>
 				<TeamTable data={players} type="players" />

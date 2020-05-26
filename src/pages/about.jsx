@@ -10,9 +10,9 @@ const AboutPage = ({ data }) => {
 
 	return (
 		<Layout>
-			<Banner title={data.markdownRemark.frontmatter.title} />
+			<Banner title={frontmatter.title} />
 			<ContentContainer>
-				<div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+				<div dangerouslySetInnerHTML={{ __html: html }} />
 			</ContentContainer>
 		</Layout>
 	)
