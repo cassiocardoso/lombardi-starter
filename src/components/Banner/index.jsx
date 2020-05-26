@@ -19,9 +19,9 @@ const StyledHeading = styled(Heading)`
   max-width: 100%;
 `
 
-export const Banner = () => (
+export const Banner = ({ image = '/img/team-photo.jpg', title = 'Team Name'}) => (
   <Box height="medium" width={{ min: '100vw' }} style={{ position: 'relative' }}>
-    <StyledImage a11yTitle="Team photo" fit="cover" src="/img/team-photo.jpg" />
-    <StyledHeading>Team Name</StyledHeading>
+    <StyledImage a11yTitle="Team photo" fit="cover" src={image} />
+    <StyledHeading>{title}</StyledHeading>
   </Box>
 )
