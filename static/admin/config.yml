@@ -1,6 +1,12 @@
 backend:
   name: git-gateway
   branch: master
+  commit_messages:
+    create: 'Create {{collection}} “{{slug}}”'
+    update: 'Update {{collection}} “{{slug}}”'
+    delete: 'Delete {{collection}} “{{slug}}”'
+    uploadMedia: '[skip ci] Upload “{{path}}”'
+    deleteMedia: '[skip ci] Delete “{{path}}”'
 
 media_folder: static/img
 public_folder: /img
@@ -14,6 +20,7 @@ collections:
     editor:
      preview: true
     fields:
+      - { label: "Template Key", name: "templateKey", widget: "hidden". default: "BlogPost" }
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Data de publicação", name: "date", widget: "datetime" }
       - { label: "Descrição", name: "description", widget: "string" }
@@ -29,6 +36,7 @@ collections:
         label: "Sobre nós"
         name: "about-page"
         fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden". default: "AboutPage" }
           - { label: "Slug", name: "slug", widget: "hidden", default: "about" }
           - { label: "Título", name: "title", widget: "string" }
           - { label: "Texto", name: "body", widget: "markdown" }
