@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useThrottledFn, useWindowResize } from 'beautiful-react-hooks'
 
+import { isBrowser } from '../../utils/isBrowser'
 import { DesktopBlogRoll } from './Desktop'
 import { MobileBlogRoll } from './Mobile'
 
-// TODO: Use hooks to handle layout update on page resize
 export const BlogRoll = ({ posts }) => {
-  return window && window.innerWidth >= 768 ? (
-    <DesktopBlogRoll posts={posts} />
-  ) : (
-    <MobileBlogRoll posts={posts} />
+  const [width, setWidth] = useState(isBrowser() ? window.innerWidth : 0)
+
+  useWindowResize(
+    useThrottledFn(event => {
+      setWidth(window.innerWidth)
+    })
   )
+
+  return width >= 768 ? <DesktopBlogRoll posts={posts} /> : <MobileBlogRoll posts={posts} />
 }

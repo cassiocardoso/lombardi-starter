@@ -3,8 +3,8 @@ import { Box, Heading, Image } from 'grommet'
 import styled from 'styled-components'
 
 const StyledImage = styled(Image)`
-	margin: 0;
-`;
+  margin: 0;
+`
 
 const StyledHeading = styled(Heading)`
   align-items: center;
@@ -14,18 +14,14 @@ const StyledHeading = styled(Heading)`
   height: 100%;
   justify-content: center;
   margin: 0;
-	position: absolute;
+  position: absolute;
   width: 100%;
-	max-width: 100%
-`;
+  max-width: 100%;
+`
 
 export const Banner = () => (
-	<Box height="medium" width={{ min: '100vw' }} style={{ position: 'relative' }}>
-		<StyledImage
-			a11yTitle="Team photo"
-    	fit="cover"
-    	src="/img/team-photo.jpg"
-  	/>
-		<StyledHeading>Team Name</StyledHeading>
-	</Box>
-);
+  <Box height="medium" width={{ min: '100vw' }} style={{ position: 'relative' }}>
+    <StyledImage a11yTitle="Team photo" fit="cover" src="/img/team-photo.jpg" />
+    <StyledHeading>Team Name</StyledHeading>
+  </Box>
+)

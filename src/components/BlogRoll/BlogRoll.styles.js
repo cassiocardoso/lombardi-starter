@@ -5,12 +5,13 @@ export const StyledImage = styled(Image)`
   margin: 0;
 `
 export const StyledHeading = styled(Heading)`
-	margin: 1rem 0;
+  margin: 1rem 0;
 
-	&.featured {
-	}
+  &.featured {
+  }
 
-	&.secondary, &.snippet {
-		font-size: 1.5rem;
-	}
-`;
+  &.secondary,
+  &.snippet {
+    font-size: 1.5rem;
+  }
+`

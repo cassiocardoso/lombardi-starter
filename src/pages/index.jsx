@@ -9,14 +9,14 @@ import { BlogRoll } from '../components/BlogRoll'
 
 const HomePage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
-	const posts = data.allMarkdownRemark.edges
+  const posts = data.allMarkdownRemark.edges
 
   return (
     <Layout location={location} title={siteTitle}>
-			<Banner />
-			<Box width="xlarge" pad={{ vertical: 'large' }}>
-				<BlogRoll posts={posts} />
-			</Box>
+      <Banner />
+      <Box width="xlarge" pad={{ vertical: 'large' }}>
+        <BlogRoll posts={posts} />
+      </Box>
     </Layout>
   )
 }
@@ -38,7 +38,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-						banner
+            banner
             date(formatString: "MMMM DD, YYYY")
             description
             title

@@ -6,14 +6,14 @@ import { Footer } from '../components/Footer'
 import { customTheme } from '../theme'
 
 const Layout = ({ children, location, title }) => {
-	console.warn('TODO: layout :: Use location & title for Seo', location ,title);
+  console.warn('TODO: layout :: Use location & title for Seo', location, title)
 
   return (
     <Grommet plain theme={customTheme}>
       <Header />
       <Main direction="column" align="center">
-				{children}
-			</Main>
+        {children}
+      </Main>
       <Footer />
     </Grommet>
   )
