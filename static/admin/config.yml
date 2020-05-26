@@ -40,3 +40,26 @@ collections:
           - { label: "Título", name: "title", widget: "string" }
           - { label: "URL", name: "url", widget: "string" }
           - { label: "Texto", name: "body", widget: "markdown" }
+
+      - file: "content/pages/team.md"
+        label: "Equipe"
+        name: "team-page"
+        fields:
+          - { label: "Slug", name: "slug", widget: "hidden", default: "team" }
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "URL", name: "url", widget: "string" }
+          - label: "Jogadores"
+            name: "players"
+            widget: "list"
+            summary: "{{fields.number}} - {{fields.name}} [{{fields.position}}]"
+            fields:
+              - { label: "Número", name: "number", widget: "string" }
+              - { label: "Nome", name: "name", widget: "string" }
+              - { label: "Posição", name: "position", widget: "string" }
+          - label: "Comissão Técnica"
+            name: "coaches"
+            widget: "list"
+            summary: "{{fields.type}} - {{fields.name}}"
+            fields:
+              - { label: "Cargo", name: "type", widget: "string" }
+              - { label: "Nome", name: "name", widget: "string" }
