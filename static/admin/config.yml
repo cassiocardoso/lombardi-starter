@@ -16,7 +16,7 @@ collections:
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Data de publicação", name: "date", widget: "datetime" }
-			- { label: "Descrição", name: "description", widget: "string" }
+      - { label: "Descrição", name: "description", widget: "string" }
       - { label: "URL", name: "URL", widget: "string" }
       - { label: "Texto", name: "body", widget: "markdown" }
   - name: "pages"
