@@ -36,7 +36,7 @@ collections:
         label: "Sobre nós"
         name: "about-page"
         fields:
-          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "AboutPage" }
           - { label: "Slug", name: "slug", widget: "hidden", default: "about" }
           - { label: "Título", name: "title", widget: "string" }
+          - { label: "URL", name: "url", widget: "string" }
           - { label: "Texto", name: "body", widget: "markdown" }
