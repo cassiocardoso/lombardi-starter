@@ -1,11 +1,11 @@
 // Gatsby supports TypeScript natively!
 import React from 'react'
 import { graphql } from 'gatsby'
-import { Box } from 'grommet'
 
 import Layout from '../layout'
 import { Banner } from '../components/Banner'
 import { BlogRoll } from '../components/BlogRoll'
+import { ContentContainer } from '../components/ContentContainer'
 
 const HomePage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -14,9 +14,9 @@ const HomePage = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Banner />
-      <Box width="xlarge" pad={{ vertical: 'large' }}>
+      <ContentContainer>
         <BlogRoll posts={posts} />
-      </Box>
+      </ContentContainer>
     </Layout>
   )
 }
