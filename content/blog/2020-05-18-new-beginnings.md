@@ -1,4 +1,5 @@
 ---
+templateKey: BlogPost
 banner: /img/post-3.jpg
 title: New Beginnings
 date: '2020-05-18T22:40:32.169Z'

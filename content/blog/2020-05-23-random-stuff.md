@@ -1,4 +1,5 @@
 ---
+templateKey: BlogPost
 banner: /img/post-1.jpg
 title: Bayern não exerce opção de compra de Philippe Coutinho por € 120 milhões
 date: 2020-05-23T08:28:49.861Z

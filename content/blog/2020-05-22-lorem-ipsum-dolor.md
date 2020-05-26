@@ -1,4 +1,5 @@
 ---
+templateKey: BlogPost
 banner: /img/post-2.jpg
 title: Lorem ipsum dolor
 date: 2020-05-22T08:28:49.861Z
