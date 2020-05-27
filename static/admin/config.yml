@@ -63,3 +63,21 @@ collections:
             fields:
               - { label: "Cargo", name: "type", widget: "string" }
               - { label: "Nome", name: "name", widget: "string" }
+
+      - file: "content/pages/schedule.md"
+        label: "Tabela"
+        name: "schedule-page"
+        fields:
+          - label: "Jogos"
+            name: "games"
+            widget: "list"
+            summary: ""
+            fields:
+              - { label: "Mandante", name: "homeTeam", widget: "string" }
+              - { label: "Pontuação Mandante", name: "homeTeamScore", widget: "string" }
+              - { label: "Visitante", name: "awayTeam", widget: "string" }
+              - { label: "Pontuação Visitante", name: "awayTeamScore", widget: "string" }
+              - { label: "Campeonato", name: "league", widget: "string" }
+              - { label: "Data", name: "date", widget: "string" }
+              - { label: "Horário", name: "time", widget: "string" }
+              - { label: "Local", name: "place", widget: "string" }
