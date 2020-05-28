@@ -26,6 +26,13 @@ module.exports = {
 				name: `pages`,
 			},
 		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				path: `${__dirname}/content/widgets`,
+				name: `pages`,
+			},
+		},
     {
       resolve: `gatsby-source-filesystem`,
       options: {

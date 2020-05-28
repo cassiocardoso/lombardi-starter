@@ -27,79 +27,76 @@ collections:
       - { label: "URL", name: "url", widget: "string" }
       - { label: "Texto", name: "body", widget: "markdown" }
   - name: "pages"
-    label: "Páginas"
-    delete: false
+    label: "Pages"
     editor:
       preview: true
     files:
       - file: "content/pages/about.md"
-        label: "Sobre nós"
-        name: "about-page"
+        label: "About Us"
+        name: "page-about"
         fields:
           - { label: "Slug", name: "slug", widget: "hidden", default: "about" }
-          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
           - { label: "URL", name: "url", widget: "string" }
-          - { label: "Texto", name: "body", widget: "markdown" }
+          - { label: "Text", name: "body", widget: "markdown" }
 
       - file: "content/pages/team.md"
-        label: "Equipe"
-        name: "team-page"
+        label: "Team"
+        name: "page-team"
         fields:
           - { label: "Slug", name: "slug", widget: "hidden", default: "team" }
-          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
           - { label: "URL", name: "url", widget: "string" }
-          - label: "Jogadores"
+          - label: "Players"
             name: "players"
             widget: "list"
             summary: "{{fields.number}} - {{fields.name}} [{{fields.position}}]"
             fields:
-              - { label: "Número", name: "number", widget: "string" }
-              - { label: "Nome", name: "name", widget: "string" }
-              - { label: "Posição", name: "position", widget: "string" }
-          - label: "Comissão Técnica"
+              - { label: "Number", name: "number", widget: "string" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Position", name: "position", widget: "string" }
+          - label: "Coaching Staff"
             name: "coaches"
             widget: "list"
             summary: "{{fields.type}} - {{fields.name}}"
             fields:
-              - { label: "Cargo", name: "type", widget: "string" }
-              - { label: "Nome", name: "name", widget: "string" }
+              - { label: "Job title", name: "type", widget: "string" }
+              - { label: "Name", name: "name", widget: "string" }
 
       - file: "content/pages/schedule.md"
-        label: "Tabela"
-        name: "schedule-page"
+        label: "Schedule"
+        name: "page-schedule"
         fields:
-          - label: "Jogos"
+          - label: "Matches"
             name: "matches"
             widget: "list"
             summary: "{{fields.homeTeam}} {{fields.homeTeamScore}} x {{fields.awayTeamScore}} {{fields.awayTeam}}"
             fields:
-              - { label: "Mandante", name: "homeTeam", widget: "string" }
-              - { label: "Logo Mandante", name: "homeTeamIcon", widget: "image" }
-              - { label: "Pontuação Mandante", name: "homeTeamScore", widget: "number", default: 0, valueType: "int", min: 0, max: 200, step: 1 }
-              - { label: "Visitante", name: "awayTeam", widget: "string" }
-              - { label: "Logo Visitante", name: "awayTeamIcon", widget: "image" }
-              - { label: "Pontuação Visitante", name: "awayTeamScore", widget: "number", default: 0, valueType: "int", min: 0, max: 200, step: 1 }
-              - { label: "Campeonato", name: "league", widget: "string" }
-              - { label: "Data", name: "date", widget: "datetime" }
-              - { label: "Local", name: "stadium", widget: "string" }
+              - { label: "Home Team", name: "homeTeam", widget: "string" }
+              - { label: "Home Team Logo", name: "homeTeamIcon", widget: "image" }
+              - { label: "Home Team Score", name: "homeTeamScore", widget: "number", default: 0, valueType: "int", min: 0, max: 200, step: 1 }
+              - { label: "Away Team", name: "awayTeam", widget: "string" }
+              - { label: "Away Team Logo", name: "awayTeamIcon", widget: "image" }
+              - { label: "Away Team Score", name: "awayTeamScore", widget: "number", default: 0, valueType: "int", min: 0, max: 200, step: 1 }
+              - { label: "League Name", name: "league", widget: "string" }
+              - { label: "Date", name: "date", widget: "datetime" }
+              - { label: "Stadium", name: "stadium", widget: "string" }
 
   - name: "widgets"
     label: "Widgets"
-    editor:
-      preview: true
     files:
-      - file: "content/page/standings.md"
-        label: "Classificação"
-        name: "standings-page"
+      - file: "content/widgets/standings.md"
+        label: "Standings"
+        name: "widget-standings"
         fields:
-          - label: "Times"
+          - label: "Teams"
             name: "teams"
             widget: "list"
-            summary:
+            summary: "{{fields.position}} {{fields.name}}"
             fields:
-              - { label: "Posição", name: "position", widget: "number", default: 0, valueType: "int", min: 0, max: 100, step: 1 }
-              - { label: "Time", name: "name", widget: "string" }
-              - { label: "Logo", name: "icon", widget: "image" }
-              - { label: "Vitórias", name: "wins", widget: "number", default: 0, valueType: "int", min: 0, max: 100, step: 1 }
-              - { label: "Derrotas", name: "losses", widget: "number", default: 0, valueType: "int", min: 0, max: 100, step: 1 }
-              - { label: "Empates", name: "draws", widget: "number", default: 0, valueType: "int", min: 0, max: 100, step: 1 }
+              - { label: "# Position", name: "position", widget: "number", default: 0, valueType: "int", min: 0, max: 100, step: 1 }
+              - { label: "Team Name", name: "name", widget: "string" }
+              - { label: "Team Logo", name: "icon", widget: "image" }
+              - { label: "Wins", name: "wins", widget: "number", default: 0, valueType: "int", min: 0, max: 100, step: 1 }
+              - { label: "Losses", name: "losses", widget: "number", default: 0, valueType: "int", min: 0, max: 100, step: 1 }
+              - { label: "Draws", name: "draws", widget: "number", default: 0, valueType: "int", min: 0, max: 100, step: 1 }
