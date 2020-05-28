@@ -6,7 +6,8 @@ export const TeamTable = ({ data, type }) => {
 		return null;
 	}
 
-	if (type === 'players') {
+	/**
+	 * if (type === 'players') {
 		return (
 			<Table>
 				<TableHeader>
@@ -27,7 +28,10 @@ export const TeamTable = ({ data, type }) => {
 				</TableBody>
 			</Table>
 		)
-	} else if (type === 'coaches') {
+	} else
+	 */
+
+	if (type === 'coaches') {
 		return (
 			<Table>
 				<TableHeader>
