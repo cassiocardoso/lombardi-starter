@@ -5,19 +5,15 @@ import { Heading } from 'grommet'
 import Layout from '../layout'
 import { Banner } from '../components/Banner'
 import { ContentContainer } from '../components/ContentContainer'
-import { TeamTable } from '../components/TeamTable'
 
 const TeamPage = ({ data }) => {
-	const { coaches, title } = data.markdownRemark.frontmatter
+	console.log('team page >>>', data)
 
 	return (
 		<Layout>
-			<Banner title={title} />
+			<Banner />
 			<ContentContainer>
-				{/* <Heading level="2">Jogadores</Heading>
-				<TeamTable data={players} type="players" /> */}
-				<Heading level="2" margin={{ top: 'xlarge' }}>Commisão Técnica</Heading>
-				<TeamTable data={coaches} type="coaches" />
+				team page
 			</ContentContainer>
 		</Layout>
 	)
@@ -35,10 +31,6 @@ export const aboutPageQuery = graphql`
 			frontmatter {
 				templateKey
 				title
-				coaches {
-					type
-					name
-				}
 			}
 		}
 	}
