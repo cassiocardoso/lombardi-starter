@@ -52,8 +52,12 @@ collections:
             widget: "list"
             summary: "{{fields.number}} - {{fields.name}} [{{fields.position}}]"
             fields:
-              - { label: "Number", name: "number", widget: "string" }
-              - { label: "Name", name: "name", widget: "string" }
+              - label: "Number"
+                name: "number"
+                widget: "string"
+              - label: "Name"
+                name: "name"
+                widget: "string"
               - label: "Position"
                 name: "position"
                 widget: "select"
@@ -100,6 +104,7 @@ collections:
             fields:
                - { label: "Label", name: "label", widget: "string" }
                - { label: "URL", name: "url", widget: "string" }
+
       - file: "content/widgets/standings.md"
         label: "Standings"
         name: "widget-standings"
