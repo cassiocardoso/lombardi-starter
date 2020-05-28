@@ -58,7 +58,7 @@ collections:
                 name: "position"
                 widget: "select"
                 multiple: true
-                options: ['QB', 'HB', 'FB', 'RB', 'TE', 'WR', 'OL', 'OT', 'OG', 'C', 'DL', 'DT', 'DE', 'LB', 'OLB', 'MLB', 'CB', 'S', 'FS', 'SS', 'P', 'K', 'PR', 'KR']
+                options: ["QB", "HB", "FB", "RB", "TE", "WR", "OL", "OT", "OG", "C", "DL", "DT", "DE", "LB", "OLB", "MLB", "CB", "S", "FS", "SS", "P", "K", "PR", "KR"]
           - label: "Coaching Staff"
             name: "coaches"
             widget: "list"
