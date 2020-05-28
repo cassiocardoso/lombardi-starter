@@ -1,44 +1,48 @@
 import React from 'react'
-import { Anchor, Box, Header as GrHeader, Nav } from 'grommet'
-import styled from 'styled-components'
+import { graphql, useStaticQuery } from 'gatsby'
 
-const menuLinks = [
-  {
-    label: 'Início',
-    url: '/',
-  },
-  {
-    label: 'Sobre',
-    url: '/about',
-  },
-  {
-    label: 'Equipe',
-    url: '/team',
-  },
-  {
-    label: 'Blog',
-    url: '/blog',
-  },
-  {
-    label: 'Contato',
-    url: '/contact',
-  },
-]
+import { isBrowser } from '../../utils/isBrowser'
+import { Container } from '../Container'
 
-const StyledHeader = styled(GrHeader)`
-  margin-top: 30px;
-`
+import { StyledHeader, Logo, StyledNav, StyledLink } from './Header.styles'
 
-export const Header = () => (
-  <StyledHeader background="brand" direction="row" height="xxsmall" justify="center">
-    <Box width="xlarge">
-      <Nav direction="row">
-        {menuLinks.map(link => (
-          <Anchor href={link.url} key={link.label}>
-            {link.label}
-          </Anchor>
-        ))}
-      </Nav>
-    </Box>
-  </StyledHeader>
-)
+export const Header = props => {
+  const {
+    markdownRemark: {
+      frontmatter: { items },
+    },
+  } = useStaticQuery(graphql`
+    query {
+      markdownRemark(fields: { slug: { regex: "/menu/" } }) {
+        frontmatter {
+          items {
+            url
+            label
+          }
+        }
+      }
+    }
+  `)
+  const currentPath = isBrowser() ? window.location.pathname.replace(/\//g, '') : ''
+
+  return (
+    <StyledHeader>
+      <Container>
+        <Logo href="/">
+          <img src="/img/baltimore-ravens.png" />
+        </Logo>
+        <StyledNav>
+          {items.map(item => (
+            <StyledLink
+              key={item.label}
+              href={item.url}
+              active={currentPath === item.url.replace(/\//g, '')}
+            >
+              {item.label}
+            </StyledLink>
+          ))}
+        </StyledNav>
+      </Container>
+    </StyledHeader>
+  )
+}

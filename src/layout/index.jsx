@@ -1,21 +1,30 @@
-import React from 'react'
-import { Grommet, Main } from 'grommet'
+import React, { Fragment } from 'react'
+import styled from 'styled-components'
+import tw from 'twin.macro'
 
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
-import { customTheme } from '../theme'
+
+const StyledLayout = styled.div`
+	${tw`bg-gray-100 h-screen `}
+`
+
+// The margin is used to compensate the top spacing of the navbar
+const StyledMain = styled.main`
+	${tw`mt-8`}
+`
 
 const Layout = ({ children, location, title }) => {
-  console.warn('TODO: layout :: Use location & title for Seo', location, title)
+  console.log('TODO: layout :: Use location & title for Seo', location, title)
 
   return (
-    <Grommet plain theme={customTheme}>
-      <Header />
-      <Main direction="column" align="center">
-        {children}
-      </Main>
+    <StyledLayout>
+			<Header />
+			<StyledMain>
+	      {children}
+			</StyledMain>
       <Footer />
-    </Grommet>
+    </StyledLayout>
   )
 }
 

@@ -1,7 +1,5 @@
 ---
 items:
-  - label: Home
-    url: /
   - label: About Us
     url: /about
   - label: Players

@@ -1,37 +1,17 @@
+// Gatsby supports TypeScript natively!
 import React from 'react'
-import { graphql } from 'gatsby'
 
 import Layout from '../layout'
-import { Banner } from '../components/Banner'
-import { ContentContainer } from '../components/ContentContainer'
+import { Container } from '../components/Container'
 
-const AboutPage = ({ data }) => {
-	const { frontmatter, html } = data.markdownRemark
-
-	return (
-		<Layout>
-			<Banner title={frontmatter.title} />
-			<ContentContainer>
-				<div dangerouslySetInnerHTML={{ __html: html }} />
-			</ContentContainer>
-		</Layout>
-	)
+const AboutPage = ({ location }) => {
+  return (
+    <Layout location={location}>
+      <Container>
+        about
+      </Container>
+    </Layout>
+  )
 }
 
 export default AboutPage
-
-export const aboutPageQuery = graphql`
-	query {
-		markdownRemark(fields: { slug: { regex: "/about/" }}) {
-			id
-			fields {
-				slug
-			}
-			html
-			frontmatter {
-				templateKey
-				title
-			}
-		}
-	}
-`

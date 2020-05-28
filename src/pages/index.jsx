@@ -3,10 +3,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import Layout from '../layout'
-import { Banner } from '../components/Banner'
-import { BlogRoll } from '../components/BlogRoll'
-import { ContentContainer } from '../components/ContentContainer'
-import { RecentMatches } from '../components/RecentMatches'
+import { Container } from '../components/Container'
 
 const HomePage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -14,11 +11,9 @@ const HomePage = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Banner />
-      <ContentContainer>
-        <BlogRoll posts={posts} />
-				<RecentMatches />
-      </ContentContainer>
+      <Container>
+        home page
+      </Container>
     </Layout>
   )
 }
@@ -32,7 +27,10 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, filter: {frontmatter: {templateKey: {eq: "BlogPost"}}}) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { templateKey: { eq: "BlogPost" } } }
+    ) {
       edges {
         node {
           excerpt
