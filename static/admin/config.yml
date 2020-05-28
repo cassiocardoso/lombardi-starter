@@ -82,3 +82,24 @@ collections:
               - { label: "Campeonato", name: "league", widget: "string" }
               - { label: "Data", name: "date", widget: "datetime" }
               - { label: "Local", name: "stadium", widget: "string" }
+
+  - name: "widgets"
+    label: "Widgets"
+    editor:
+      preview: true
+    files:
+      - file: "content/page/standings.md"
+        label: "Classificação"
+        name: "standings-page"
+        fields:
+          - label: "Times"
+            name: "teams"
+            widget: "list"
+            summary:
+            fields:
+              - { label: "Posição", name: "position", widget: "number", default: 0, valueType: "int", min: 0, max: 100, step: 1 }
+              - { label: "Time", name: "name", widget: "string" }
+              - { label: "Logo", name: "icon", widget: "image" }
+              - { label: "Vitórias", name: "wins", widget: "number", default: 0, valueType: "int", min: 0, max: 100, step: 1 }
+              - { label: "Derrotas", name: "losses", widget: "number", default: 0, valueType: "int", min: 0, max: 100, step: 1 }
+              - { label: "Empates", name: "draws", widget: "number", default: 0, valueType: "int", min: 0, max: 100, step: 1 }
