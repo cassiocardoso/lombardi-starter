@@ -69,9 +69,9 @@ collections:
         name: "schedule-page"
         fields:
           - label: "Jogos"
-            name: "games"
+            name: "matches"
             widget: "list"
-            summary: ""
+            summary: "{{fields.homeTeam}} {{fields.homeTeamScore}} x {{fields.awayTeamScore}} {{fields.awayTeam}}"
             fields:
               - { label: "Mandante", name: "homeTeam", widget: "string" }
               - { label: "Logo Mandante", name: "homeTeamIcon", widget: "image" }
@@ -81,4 +81,4 @@ collections:
               - { label: "Pontuação Visitante", name: "awayTeamScore", widget: "number", default: 0, valueType: "int", min: 0, max: 200, step: 1 }
               - { label: "Campeonato", name: "league", widget: "string" }
               - { label: "Data", name: "date", widget: "datetime" }
-              - { label: "Local", name: "place", widget: "string" }
+              - { label: "Local", name: "stadium", widget: "string" }

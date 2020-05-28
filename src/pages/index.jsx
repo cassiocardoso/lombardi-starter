@@ -6,6 +6,7 @@ import Layout from '../layout'
 import { Banner } from '../components/Banner'
 import { BlogRoll } from '../components/BlogRoll'
 import { ContentContainer } from '../components/ContentContainer'
+import { RecentMatches } from '../components/RecentMatches'
 
 const HomePage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -16,6 +17,7 @@ const HomePage = ({ data, location }) => {
       <Banner />
       <ContentContainer>
         <BlogRoll posts={posts} />
+				<RecentMatches />
       </ContentContainer>
     </Layout>
   )
