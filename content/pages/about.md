@@ -1,8 +1,8 @@
 ---
-title: Sobre nós
+title: About Us
+url: about
 ---
-
-# História do time
+# Team History
 
 Primeiro eu queria cumprimentar os internautas. -Oi Internautas! Depois dizer que o meio ambiente é sem dúvida nenhuma uma ameaça ao desenvolvimento sustentável. E isso significa que é uma ameaça pro futuro do nosso planeta e dos nossos países. O desemprego beira 20%, ou seja, 1 em cada 4 portugueses.
 
