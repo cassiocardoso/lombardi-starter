@@ -11,9 +11,7 @@ const HomePage = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Container>
-        home page
-      </Container>
+      <Container>home page</Container>
     </Layout>
   )
 }

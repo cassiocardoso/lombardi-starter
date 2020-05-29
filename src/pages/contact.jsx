@@ -4,12 +4,12 @@ import React from 'react'
 import Layout from '../layout'
 import { Container } from '../components/Container'
 
-const AboutPage = ({ location }) => {
+const ContactPage = ({ location }) => {
   return (
     <Layout location={location}>
-      <Container>about</Container>
+      <Container>contact</Container>
     </Layout>
   )
 }
 
-export default AboutPage
+export default ContactPage
