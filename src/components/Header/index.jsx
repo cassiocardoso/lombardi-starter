@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
+import { useThrottledFn, useWindowResize } from 'beautiful-react-hooks'
 
+import config from '../../../lombardi.config'
 import { isBrowser } from '../../utils/isBrowser'
+import { isMediumScreen } from '../../utils/screenSize'
 import { Container } from '../Container'
 
-import { StyledHeader, Logo, StyledNav, StyledLink } from './Header.styles'
+import { MenuButton } from './MenuButton'
+import { DesktopMenu } from './DesktopMenu'
+import { MobileMenu } from './MobileMenu'
+import { StyledHeader, Logo, ImageContainer, LogoImage } from './Header.styles'
 
 export const Header = props => {
   const {
@@ -23,26 +29,32 @@ export const Header = props => {
       }
     }
   `)
+  const [menuIsOpen, toggleMenu] = useState(false)
+  const [windowWidth, setWindowWidth] = useState(isBrowser() ? window.innerWidth : 0)
   const currentPath = isBrowser() ? window.location.pathname.replace(/\//g, '') : ''
+
+  useWindowResize(
+    useThrottledFn(event => {
+      setWindowWidth(window.innerWidth)
+    })
+  )
 
   return (
     <StyledHeader>
       <Container>
-        <Logo href="/">
-          <img src="/img/baltimore-ravens.png" />
+        <MenuButton isOpen={menuIsOpen} handleClick={toggleMenu} />
+        <Logo to="/">
+          {isMediumScreen(windowWidth) ? (
+            <span>{config.teamName}</span>
+          ) : (
+            <ImageContainer>
+              <LogoImage src="/img/ravens-b.png" />
+            </ImageContainer>
+          )}
         </Logo>
-        <StyledNav>
-          {items.map(item => (
-            <StyledLink
-              key={item.label}
-              href={item.url}
-              active={currentPath === item.url.replace(/\//g, '')}
-            >
-              {item.label}
-            </StyledLink>
-          ))}
-        </StyledNav>
+        <DesktopMenu currentPath={currentPath} items={items} windowWidth={windowWidth} />
       </Container>
+      {menuIsOpen && <MobileMenu currentPath={currentPath} items={items} toggleMenu={toggleMenu} />}
     </StyledHeader>
   )
 }
