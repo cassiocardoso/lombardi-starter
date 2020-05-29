@@ -6,17 +6,17 @@
   "author": "Cassio Cardoso <caugusto.cardoso@gmail.com>",
   "bugs": {
     "url": "https://github.com/cassiocardoso/lombardi-starter/issues"
-	},
-	"homepage": "https://github.com/cassiocardoso/lombardi-starter#readme",
+  },
+  "homepage": "https://github.com/cassiocardoso/lombardi-starter#readme",
   "keywords": [
-		"football",
-		"team",
-		"template",
-		"starter",
-		"blog",
-		"gatsby",
-		"netlify",
-		"tailwindcss"
+    "football",
+    "team",
+    "template",
+    "starter",
+    "blog",
+    "gatsby",
+    "netlify",
+    "tailwindcss"
   ],
   "license": "MIT",
   "main": "n/a",
@@ -70,11 +70,11 @@
   "devDependencies": {
     "@types/react-helmet": "^6.0.0",
     "prettier": "2.0.5"
-	},
-	"babelMacros": {
-		"twin": {
-			"preset": "styled-components",
-			"autoCssProp": true
-		}
-	}
+  },
+  "babelMacros": {
+    "twin": {
+      "preset": "styled-components",
+      "autoCssProp": true
+    }
+  }
 }
