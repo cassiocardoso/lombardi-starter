@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import tw from 'twin.macro'
 
 const ContentWrapper = styled.div`
-  ${tw`p-4 flex flex-wrap border-2 border-gray-200 bg-white rounded-lg content-center`}
+  ${tw`p-4 flex flex-wrap border-2 border-gray-200 bg-white rounded-lg content-center shadow`}
 `
 
 const Image = styled.img`

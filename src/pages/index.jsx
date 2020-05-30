@@ -3,6 +3,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import Layout from '../layout'
+import { BlogRoll } from '../components/BlogRoll'
 import { Container } from '../components/Container'
 import { Hero } from '../components/Hero'
 
@@ -13,7 +14,9 @@ const HomePage = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Hero />
-      <Container>home page</Container>
+      <Container>
+        <BlogRoll posts={posts} />
+      </Container>
     </Layout>
   )
 }
