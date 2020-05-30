@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import tw from 'twin.macro'
 
 const CardWrapper = styled.div`
-  ${tw`border-2 border-gray-200 bg-white rounded-lg overflow-hidden shadow`}
+  ${tw`bg-white rounded-lg overflow-hidden shadow`}
 `
 
 const HeaderImage = styled.img`
