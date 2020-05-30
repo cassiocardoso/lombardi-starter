@@ -6,7 +6,7 @@ import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 
 const StyledLayout = styled.div`
-  ${tw`bg-gray-100 h-screen `}
+  ${tw`bg-gray-100 min-h-screen`}
 `
 
 // The margin is used to compensate the top spacing of the navbar
