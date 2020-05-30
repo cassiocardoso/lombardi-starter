@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 
 import Layout from '../layout'
 import { Container } from '../components/Container'
+import { Hero } from '../components/Hero'
 
 const HomePage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -11,6 +12,7 @@ const HomePage = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
+      <Hero />
       <Container>home page</Container>
     </Layout>
   )
