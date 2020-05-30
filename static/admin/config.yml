@@ -144,3 +144,22 @@ collections:
               - { label: "Wins", name: "wins", widget: "number", default: 0, valueType: "int", min: 0, max: 100, step: 1 }
               - { label: "Losses", name: "losses", widget: "number", default: 0, valueType: "int", min: 0, max: 100, step: 1 }
               - { label: "Draws", name: "draws", widget: "number", default: 0, valueType: "int", min: 0, max: 100, step: 1 }
+
+      - file: "content/widgets/recent-matches.md"
+        label: "Recent Matches"
+        name: "widget-recent-matches"
+        fields:
+          - label: "Recent Matches"
+            name: "matches"
+            widget: "list"
+            summary: "{{fields.homeTeam}} {{fields.homeTeamScore}} x {{fields.awayTeamScore}} {{fields.awayTeam}}"
+            fields:
+              - { label: "Home Team", name: "homeTeam", widget: "string" }
+              - { label: "Home Team Logo", name: "homeTeamIcon", widget: "image" }
+              - { label: "Home Team Score", name: "homeTeamScore", widget: "number", default: 0, valueType: "int", min: 0, max: 200, step: 1 }
+              - { label: "Away Team", name: "awayTeam", widget: "string" }
+              - { label: "Away Team Logo", name: "awayTeamIcon", widget: "image" }
+              - { label: "Away Team Score", name: "awayTeamScore", widget: "number", default: 0, valueType: "int", min: 0, max: 200, step: 1 }
+              - { label: "League Name", name: "league", widget: "string" }
+              - { label: "Date", name: "date", widget: "datetime" }
+              - { label: "Stadium", name: "stadium", widget: "string" }
