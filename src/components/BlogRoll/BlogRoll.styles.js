@@ -6,7 +6,7 @@ export const BlogRollContainer = styled.section`
 `
 
 export const MobileCardWrapper = styled.div`
-	${tw`my-2`}
+  ${tw`my-2`}
 `
 
 export const BlogRollRow = styled.div`

@@ -10,10 +10,10 @@ import { getPostUrl } from '../../utils/getPostUrl'
 import { BlogRollContainer, BlogRollRow } from './BlogRoll.styles'
 
 export const DesktopLayout = ({ posts }) => {
-	const [firstPost, secondPost, thirdPost, fourthPost, fifthPost] = posts
+  const [firstPost, secondPost, thirdPost, fourthPost, fifthPost] = posts
 
-	return (
-		<BlogRollContainer>
+  return (
+    <BlogRollContainer>
       <BlogRollRow>
         {firstPost && (
           <div css={[tw`w-2/3`]}>
@@ -66,5 +66,5 @@ export const DesktopLayout = ({ posts }) => {
         </div>
       )}
     </BlogRollContainer>
-	)
+  )
 }

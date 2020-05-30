@@ -8,13 +8,17 @@ import { DesktopLayout } from './Desktop'
 import { MobileLayout } from './Mobile'
 
 export const BlogRoll = ({ posts }) => {
-	const [windowWidth, setWindowWidth] = useState(isBrowser() ? window.innerWidth : 0)
+  const [windowWidth, setWindowWidth] = useState(isBrowser() ? window.innerWidth : 0)
 
-	useWindowResize(
+  useWindowResize(
     useThrottledFn(event => {
       setWindowWidth(window.innerWidth)
     })
   )
 
-	return isMediumScreen(windowWidth) ? <MobileLayout posts={posts} /> : <DesktopLayout posts={posts} />
+  return isMediumScreen(windowWidth) ? (
+    <MobileLayout posts={posts} />
+  ) : (
+    <DesktopLayout posts={posts} />
+  )
 }
