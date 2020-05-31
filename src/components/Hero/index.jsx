@@ -3,10 +3,14 @@ import { graphql, useStaticQuery } from 'gatsby'
 
 import { HeroWrapper, HeroTitle } from './Hero.styles'
 
-export const Hero = () => {
+/**
+ * Hero can receive the customized props to change the banner or title
+ * or fallback to the default values set using the CMS.
+ */
+export const Hero = ({ showHero, image, title, showTitle }) => {
   const {
     markdownRemark: {
-      frontmatter: { showHero, image, title, showTitle },
+      frontmatter,
     },
   } = useStaticQuery(graphql`
     query {
@@ -22,8 +26,8 @@ export const Hero = () => {
   `)
 
   return (
-    showHero && (
-      <HeroWrapper image={image}>{showTitle && <HeroTitle>{title}</HeroTitle>}</HeroWrapper>
+    (showHero || frontmatter.showHero) && (
+      <HeroWrapper image={image || frontmatter.image}>{(showTitle || frontmatter.showTitle) && <HeroTitle>{title || frontmatter.title}</HeroTitle>}</HeroWrapper>
     )
   )
 }
