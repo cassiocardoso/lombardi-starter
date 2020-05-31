@@ -126,7 +126,8 @@ collections:
               - label: "Platform"
                 name: "platform"
                 widget: "select"
-                options: ["Facebook", "Instagram", "Twitter", "Youtube"]
+                options: ["Facebook", "Instagram", "Snapchat", "TikTok", "Twitter", "Youtube"]
+              - { label: "Username", name: "username", widget: "string" }
               - { label: "URL", name: "url", widget: "string" }
 
       - file: "content/widgets/standings.md"
