@@ -56,3 +56,6 @@ export const Date = styled.div`
 export const Stadium = styled.div`
   ${tw`text-sm`}
 `
+export const ButtonWrapper = styled.div`
+  ${tw`flex mt-4 justify-center`}
+`

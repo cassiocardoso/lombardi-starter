@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql, Link, useStaticQuery } from 'gatsby'
 import { useThrottledFn, useWindowResize } from 'beautiful-react-hooks'
 
+import { Button } from '../Button'
 import { SectionTitle } from '../SectionTitle'
 import { isBrowser } from '../../utils/isBrowser'
 import { isLargeScreen } from '../../utils/screenSize'
@@ -17,6 +18,7 @@ import {
   ScoreWrapper,
   Score,
   Stadium,
+  ButtonWrapper,
 } from './RecentMatches.styles'
 
 export const RecentMatches = ({ posts }) => {
@@ -74,6 +76,11 @@ export const RecentMatches = ({ posts }) => {
           </MatchBox>
         ))}
       </MatchesWrapper>
+      <ButtonWrapper>
+        <Button>
+          <Link to="/schedule">See full schedule</Link>
+        </Button>
+      </ButtonWrapper>
     </Wrapper>
   )
 }
