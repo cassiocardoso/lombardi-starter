@@ -1,8 +1,6 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 
-import config from '../../../lombardi.config'
-
 import { HeroWrapper, HeroTitle } from './Hero.styles'
 
 export const Hero = () => {

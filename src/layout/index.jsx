@@ -14,9 +14,8 @@ const StyledMain = styled.main`
   ${tw`mt-8`}
 `
 
+// TODO: layout :: Use location & title for Seo
 const Layout = ({ children, location, title }) => {
-  console.log('TODO: layout :: Use location & title for Seo', location, title)
-
   return (
     <StyledLayout>
       <Header />

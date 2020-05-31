@@ -3,7 +3,7 @@ import React from 'react'
 import { CardSideImage } from '../Card/CardSideImage'
 import { getPostUrl } from '../../utils/getPostUrl'
 
-import { BlogRollContainer, BlogRollRow, MobileCardWrapper } from './BlogRoll.styles'
+import { BlogRollContainer, MobileCardWrapper } from './BlogRoll.styles'
 
 export const MobileLayout = ({ posts }) => {
   return (
