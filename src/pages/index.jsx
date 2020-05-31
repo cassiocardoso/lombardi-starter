@@ -8,6 +8,7 @@ import { BlogRoll } from '../components/BlogRoll'
 import { Container } from '../components/Container'
 import { Hero } from '../components/Hero'
 import { RecentMatches } from '../components/RecentMatches'
+import { SocialBanners } from '../components/SocialBanners'
 import { Standings } from '../components/Standings'
 
 const HomePage = ({ data, location }) => {
@@ -21,8 +22,10 @@ const HomePage = ({ data, location }) => {
         <BlogRoll posts={posts} />
         <RecentMatches />
         <div css={[tw`w-full flex my-6`]}>
-          <div css={[tw`w-2/3`]}>1</div>
-          <div css={[tw`w-1/3`]}>
+          <div css={[tw`w-2/3`]}>
+            <SocialBanners />
+          </div>
+          <div css={[tw`w-1/3 ml-4`]}>
             <Standings />
           </div>
         </div>

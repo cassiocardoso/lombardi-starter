@@ -1,23 +1,10 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
+
+import { ExternalLink } from '../../components/Link/External'
+import { getIcon } from '../../utils/getIcon'
 
 import { IconsWrapper, IconWrapper } from './SocialLinks.styles'
-
-const getIcon = (platform, size = 20) => {
-  switch (platform) {
-    case 'Facebook':
-      return <FaFacebook size={size} />
-    case 'Instagram':
-      return <FaInstagram size={size} />
-    case 'Twitter':
-      return <FaTwitter size={size} />
-    case 'Youtube':
-      return <FaYoutube size={size} />
-    default:
-      return null
-  }
-}
 
 export const SocialLinks = () => {
   const {
@@ -40,9 +27,9 @@ export const SocialLinks = () => {
   return (
     <IconsWrapper>
       {profiles.map(profile => (
-        <a key={profile.platform} href={profile.url} target="_blank" rel="noopener noreferrer">
+        <ExternalLink key={profile.platform} href={profile.url}>
           <IconWrapper>{getIcon(profile.platform)}</IconWrapper>
-        </a>
+        </ExternalLink>
       ))}
     </IconsWrapper>
   )
