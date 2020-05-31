@@ -11,7 +11,7 @@ const StyledLayout = styled.div`
 
 // The margin is used to compensate the top spacing of the navbar
 const StyledMain = styled.main`
-  ${tw`mt-8`}
+  ${tw`mt-12`}
 `
 
 // TODO: layout :: Use location & title for Seo

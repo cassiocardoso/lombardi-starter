@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import tw from 'twin.macro'
 
 export const StyledHeader = styled.header`
-  ${tw`bg-gray-700 text-white transform translate-y-8`}
+  ${tw`bg-gray-700 text-white transform translate-y-12`}
 `
 
 export const Logo = styled(Link)`
