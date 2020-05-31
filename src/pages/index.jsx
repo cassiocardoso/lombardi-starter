@@ -1,12 +1,14 @@
 // Gatsby supports TypeScript natively!
 import React from 'react'
 import { graphql } from 'gatsby'
+import tw from 'twin.macro'
 
 import Layout from '../layout'
 import { BlogRoll } from '../components/BlogRoll'
 import { Container } from '../components/Container'
 import { Hero } from '../components/Hero'
 import { RecentMatches } from '../components/RecentMatches'
+import { Standings } from '../components/Standings'
 
 const HomePage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -18,6 +20,12 @@ const HomePage = ({ data, location }) => {
       <Container>
         <BlogRoll posts={posts} />
         <RecentMatches />
+        <div css={[tw`w-full flex my-6`]}>
+          <div css={[tw`w-2/3`]}>1</div>
+          <div css={[tw`w-1/3`]}>
+            <Standings />
+          </div>
+        </div>
       </Container>
     </Layout>
   )
