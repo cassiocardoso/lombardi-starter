@@ -2,13 +2,13 @@ import React, { useState } from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import { useThrottledFn, useWindowResize } from 'beautiful-react-hooks'
 
+import { SectionTitle } from '../SectionTitle'
 import { isBrowser } from '../../utils/isBrowser'
 import { isLargeScreen } from '../../utils/screenSize'
 import { formatDatetime } from '../../utils/formatDatetime'
 
 import {
   Wrapper,
-  Title,
   MatchesWrapper,
   MatchBox,
   Date,
@@ -53,7 +53,7 @@ export const RecentMatches = ({ posts }) => {
 
   return (
     <Wrapper>
-      <Title>Recent Matches</Title>
+      <SectionTitle>Recent Matches</SectionTitle>
       <MatchesWrapper className={`${isLargeScreen(windowWidth) ? 'mobile' : ''}`}>
         {matches.map(match => (
           <MatchBox

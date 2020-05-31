@@ -2,11 +2,7 @@ import styled from 'styled-components'
 import tw from 'twin.macro'
 
 export const Wrapper = styled.section`
-  ${tw`w-full`}
-`
-
-export const Title = styled.h2`
-  ${tw`text-3xl font-medium mb-2`}
+  ${tw`w-full my-6`}
 `
 
 export const MatchesWrapper = styled.div`
