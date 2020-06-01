@@ -1,8 +1,10 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Layout from '../layout'
-import { rhythm, scale } from '../utils/typography'
+import { ArticleWrapper } from '../components/ArticleWrapper'
+import { HTMLWrapper } from '../components/HTMLWrapper'
+import { MainContainer } from '../components/Container/Main'
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -11,61 +13,20 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <article>
-        <header>
-          <h1
-            style={{
-              marginTop: rhythm(1),
-              marginBottom: 0,
-            }}
-          >
-            {post.frontmatter.title}
-          </h1>
-          <p
-            style={{
-              ...scale(-1 / 5),
-              display: `block`,
-              marginBottom: rhythm(1),
-            }}
-          >
-            {post.frontmatter.date}
-          </p>
-        </header>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
-        <footer>post footer</footer>
-      </article>
-
-      <nav>
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={`/blog/${previous.frontmatter.url}`} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={`/blog/${next.frontmatter.url}`} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
+      <MainContainer>
+        <HTMLWrapper>
+          <ArticleWrapper
+            banner={post.frontmatter.banner}
+            content={post.html}
+            date={post.frontmatter.date}
+            id={post.id}
+            next={next}
+            previous={previous}
+            title={post.frontmatter.title}
+            url={post.frontmatter.url}
+          />
+        </HTMLWrapper>
+      </MainContainer>
     </Layout>
   )
 }
@@ -86,7 +47,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        description
+        banner
         url
       }
     }

@@ -2,53 +2,59 @@ import styled from 'styled-components'
 import tw from 'twin.macro'
 
 export const HTMLWrapper = styled.div`
-	h1, h2, h3, h4, h5, h6 {
-		${tw`font-semibold`}
-	}
+  ${tw`bg-white pt-12 pb-24 px-12`}
 
-	h1, h2, h3 {
-		${tw`my-4`}
-	}
+  h1, h2, h3, h4, h5, h6 {
+    ${tw`font-semibold`}
+  }
 
-	h4, h5, h6 {
-		${tw`my-2`}
-	}
+  h1,
+  h2,
+  h3 {
+    ${tw`my-4`}
+  }
 
-	h1 {
-		${tw`text-4xl`}
-	}
+  h4,
+  h5,
+  h6 {
+    ${tw`my-2`}
+  }
 
-	h2 {
-		${tw`text-3xl`}
-	}
+  h1 {
+    ${tw`text-4xl`}
+  }
 
-	h3 {
-		${tw`text-2xl`}
-	}
+  h2 {
+    ${tw`text-3xl`}
+  }
 
-	h4 {
-		${tw`text-xl`}
-	}
+  h3 {
+    ${tw`text-2xl`}
+  }
 
-	h5 {
-		${tw`text-lg`}
-	}
+  h4 {
+    ${tw`text-xl`}
+  }
 
-	h6 {
-		${tw`text-base`}
-	}
+  h5 {
+    ${tw`text-lg`}
+  }
 
-	p {
-		${tw`mb-4`}
-	}
+  h6 {
+    ${tw`text-base`}
+  }
 
-	ol {
-		${tw`pl-8`}
-		list-style: decimal;
-	}
+  p {
+    ${tw`mb-4`}
+  }
 
-	ul {
-		${tw`pl-8`}
-		list-style: disc;
-	}
+  ol {
+    ${tw`pl-8`}
+    list-style: decimal;
+  }
+
+  ul {
+    ${tw`pl-8`}
+    list-style: disc;
+  }
 `
