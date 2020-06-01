@@ -5,7 +5,7 @@ import tw from 'twin.macro'
 
 import Layout from '../layout'
 import { BlogRoll } from '../components/BlogRoll'
-import { Container } from '../components/Container'
+import { MainContainer } from '../components/Container/Main'
 import { Hero } from '../components/Hero'
 import { RecentMatches } from '../components/RecentMatches'
 import { SocialBanners } from '../components/SocialBanners'
@@ -18,7 +18,7 @@ const HomePage = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Hero />
-      <Container>
+      <MainContainer>
         <BlogRoll posts={posts} />
         <RecentMatches />
         <div css={[tw`w-full flex my-6`]}>
@@ -29,7 +29,7 @@ const HomePage = ({ data, location }) => {
             <Standings />
           </div>
         </div>
-      </Container>
+      </MainContainer>
     </Layout>
   )
 }

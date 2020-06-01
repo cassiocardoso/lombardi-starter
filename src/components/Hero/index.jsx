@@ -9,9 +9,7 @@ import { HeroWrapper, HeroTitle } from './Hero.styles'
  */
 export const Hero = ({ showHero, image, title, showTitle }) => {
   const {
-    markdownRemark: {
-      frontmatter,
-    },
+    markdownRemark: { frontmatter },
   } = useStaticQuery(graphql`
     query {
       markdownRemark(fields: { slug: { regex: "/hero/" } }) {
@@ -27,7 +25,11 @@ export const Hero = ({ showHero, image, title, showTitle }) => {
 
   return (
     (showHero || frontmatter.showHero) && (
-      <HeroWrapper image={image || frontmatter.image}>{(showTitle || frontmatter.showTitle) && <HeroTitle>{title || frontmatter.title}</HeroTitle>}</HeroWrapper>
+      <HeroWrapper image={image || frontmatter.image}>
+        {(showTitle || frontmatter.showTitle) && (
+          <HeroTitle>{title || frontmatter.title}</HeroTitle>
+        )}
+      </HeroWrapper>
     )
   )
 }

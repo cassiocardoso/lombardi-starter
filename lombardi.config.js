@@ -9,4 +9,5 @@ module.exports = {
   disqus: {
     shortname: '',
   },
+  postsPerPage: 4,
 }
