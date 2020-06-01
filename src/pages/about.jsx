@@ -3,18 +3,18 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import Layout from '../layout'
-import { Container } from '../components/Container'
+import { MainContainer } from '../components/Container/Main'
 import { Hero } from '../components/Hero'
 import { HTMLWrapper } from '../components/HTMLWrapper'
 
 const AboutPage = ({ data, location }) => {
-	const { frontmatter, html } = data.markdownRemark
+  const { frontmatter, html } = data.markdownRemark
   return (
     <Layout location={location}>
-			<Hero title={frontmatter.title} showTitle />
-      <Container>
-				<HTMLWrapper dangerouslySetInnerHTML={{ __html: html }} />
-			</Container>
+      <Hero title={frontmatter.title} showTitle />
+      <MainContainer>
+        <HTMLWrapper dangerouslySetInnerHTML={{ __html: html }} />
+      </MainContainer>
     </Layout>
   )
 }
@@ -22,13 +22,13 @@ const AboutPage = ({ data, location }) => {
 export default AboutPage
 
 export const pageQuery = graphql`
-	query {
-  	markdownRemark(fields: {slug: {regex: "/about/"}}) {
-    	id
-    	html
-    	frontmatter {
-      	title
-    	}
-  	}
-	}
+  query {
+    markdownRemark(fields: { slug: { regex: "/about/" } }) {
+      id
+      html
+      frontmatter {
+        title
+      }
+    }
+  }
 `
