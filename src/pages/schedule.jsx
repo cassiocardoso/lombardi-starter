@@ -5,6 +5,7 @@ import tw from 'twin.macro'
 
 import Layout from '../layout'
 import { Container } from '../components/Container'
+import { Hero } from '../components/Hero'
 import { SectionTitle } from '../components/SectionTitle'
 import { Table, TableBody, TableHead } from '../components/Table'
 import { formatDatetime } from '../utils/formatDatetime'
@@ -23,6 +24,7 @@ const SchedulePage = ({ data, location }) => {
 
   return (
     <Layout location={location}>
+			<Hero />
       <Container>
         <ContentWrapper>
           <SectionTitle>Schedule</SectionTitle>

@@ -21,7 +21,7 @@ const ContactPage = ({ location }) => {
     <Layout location={location}>
       <Container>
         <SectionWrapper>
-          <SectionTitle>Contact</SectionTitle>
+          <SectionTitle>Contact Us</SectionTitle>
           <ContentWrapper>
             <Map />
             <ContactForm />

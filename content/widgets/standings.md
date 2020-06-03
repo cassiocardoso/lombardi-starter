@@ -5,23 +5,23 @@ teams:
     losses: 1
     draws: 0
     icon: /img/baltimore-ravens.png
-    name: Baltimore Ravens
+    name: Bautimor Reivens
   - position: 2
     wins: 4
     losses: 2
     draws: 0
     icon: /img/arizona-cardinals.png
-    name: Arizona Cardinals
+    name: Acetona Cardinales
   - position: 3
     wins: 3
     losses: 3
     draws: 0
     icon: /img/houston-texans.png
-    name: Houston Texans
+    name: Hueston Texacos
   - position: 4
     wins: 0
     losses: 6
     draws: 0
-    name: Atlanta Falcons
+    name: Atalanta Seaguls
     icon: /img/atlanta-falcons.png
 ---

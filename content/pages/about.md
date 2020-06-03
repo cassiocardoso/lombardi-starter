@@ -5,11 +5,11 @@ url: about
 
 # Team History
 
-Primeiro eu queria cumprimentar os internautas. -Oi Internautas! Depois dizer que o meio ambiente é sem dúvida nenhuma uma ameaça ao desenvolvimento sustentável. E isso significa que é uma ameaça pro futuro do nosso planeta e dos nossos países. O desemprego beira 20%, ou seja, 1 em cada 4 portugueses.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed dolor at neque congue suscipit. Curabitur sollicitudin augue vel ipsum pretium, eget sodales odio fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec vel lacus non nunc lobortis tincidunt in nec erat. Curabitur aliquet tellus at nisi aliquet sollicitudin. Vivamus at magna eros. Maecenas luctus neque vel condimentum elementum. Aenean ut aliquam dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum eu nibh eget libero facilisis fermentum. Praesent non tellus sit amet orci viverra placerat. Donec magna dolor, varius et sapien vel, sodales facilisis dolor.
 
-Todos as descrições das pessoas são sobre a humanidade do atendimento, a pessoa pega no pulso, examina, olha com carinho. Então eu acho que vai ter outra coisa, que os médicos cubanos trouxeram pro brasil, um alto grau de humanidade.
+Vivamus tristique leo at mi tincidunt, non fermentum justo fringilla. Nunc luctus, ligula eu bibendum mattis, est velit maximus augue, sed molestie elit justo ornare nunc. Sed semper sit amet neque nec aliquam. Proin vel hendrerit augue. Sed euismod ullamcorper leo, ultricies maximus sem laoreet eu. Phasellus lobortis felis magna, vel venenatis ante sagittis vitae. Suspendisse faucibus tempus ex, vitae condimentum quam fringilla a. Aliquam nec velit interdum, aliquam eros at, malesuada enim. Nam sollicitudin lobortis ante, ut finibus lacus dignissim interdum. Ut id neque molestie diam iaculis iaculis at molestie nunc. Ut ullamcorper dui est, non tincidunt neque sagittis et.
 
-A única área que eu acho, que vai exigir muita atenção nossa, e aí eu já aventei a hipótese de até criar um ministério. É na área de... Na área... Eu diria assim, como uma espécie de analogia com o que acontece na área agrícola.
+Praesent aliquam mollis dui, eget lobortis sem laoreet at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam ipsum nisi, convallis eu justo vitae, ultricies congue augue. Donec metus ex, sollicitudin et nulla eu, pharetra ornare mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam sit amet urna pretium, ornare ligula vulputate, interdum nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et turpis euismod, ultricies ipsum vitae, facilisis ante. Aenean malesuada orci a felis elementum posuere.
 
 ### Third level heading
 
@@ -17,7 +17,7 @@ A única área que eu acho, que vai exigir muita atenção nossa, e aí eu já a
 - Item 2
 - Item 3
 
-Se hoje é o dia das crianças... Ontem eu disse: o dia da criança é o dia da mãe, dos pais, das professoras, mas também é o dia dos animais, sempre que você olha uma criança, há sempre uma figura oculta, que é um cachorro atrás. O que é algo muito importante!
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed dolor at neque congue suscipit. Curabitur sollicitudin augue vel ipsum pretium, eget sodales odio fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec vel lacus non nunc lobortis tincidunt in nec erat. Curabitur aliquet tellus at nisi aliquet sollicitudin. Vivamus at magna eros. Maecenas luctus neque vel condimentum elementum. Aenean ut aliquam dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum eu nibh eget libero facilisis fermentum. Praesent non tellus sit amet orci viverra placerat. Donec magna dolor, varius et sapien vel, sodales facilisis dolor.
 
 > Some nice quote
 
@@ -27,15 +27,17 @@ Se hoje é o dia das crianças... Ontem eu disse: o dia da criança é o dia da 
 2. second
 3. third
 
-No meu xinélo da humildade eu gostaria muito de ver o Neymar e o Ganso. Por que eu acho que.... 11 entre 10 brasileiros gostariam. Você veja, eu já vi, parei de ver. Voltei a ver, e acho que o Neymar e o Ganso têm essa capacidade de fazer a gente olhar.
+Praesent aliquam mollis dui, eget lobortis sem laoreet at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam ipsum nisi, convallis eu justo vitae, ultricies congue augue. Donec metus ex, sollicitudin et nulla eu, pharetra ornare mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam sit amet urna pretium, ornare ligula vulputate, interdum nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et turpis euismod, ultricies ipsum vitae, facilisis ante. Aenean malesuada orci a felis elementum posuere.
+
+Maecenas cursus odio id arcu eleifend varius. Proin venenatis orci eu dolor efficitur ultrices. Sed placerat ex nec felis luctus, id sagittis nulla fermentum. Vestibulum in odio id augue venenatis congue eu id nunc. Nunc ante ex, ullamcorper eu ligula ac, dapibus finibus nisi. Sed eget tellus lorem. Suspendisse leo justo, vestibulum non egestas eget, pellentesque vel neque. Mauris ut magna feugiat, laoreet risus in, facilisis ex. Donec interdum maximus justo, eget aliquam tortor porta at. Quisque eget arcu non nisl convallis auctor. Praesent eu magna rhoncus, rutrum urna scelerisque, mollis nunc. Vivamus sodales vel nisi eget tempus. Mauris nibh mi, facilisis sed felis ac, accumsan cursus ligula. Quisque lorem dolor, commodo fermentum eros id, suscipit pharetra turpis.
 
 ## Diretoria executiva
 
-**Presidente**: John Doe
+**President**: John Doe
 
-**Vice-presidente**: Joe Jonas
+**Vice-president**: Joe Jonas
 
-**Diretor esportivo**: Ash Ketchum
+**General Manager**: Ash Ketchum
 
 <dl>
 	<dt>Title</dt>

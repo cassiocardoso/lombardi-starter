@@ -1,18 +1,18 @@
 ---
 profiles:
   - platform: Facebook
-    url: https://facebook.com/baltimoreravens
-    username: '@baltimoreravens'
+    url: https://facebook.com/bautimorreivens
+    username: '@bautimorreivens'
   - platform: Instagram
-    url: https://instagram.com/baltimoreravens
-    username: '@baltimoreravens'
+    url: https://instagram.com/bautimorreivens
+    username: '@bautimorreivens'
   - platform: Twitter
-    url: https://twitter.com/baltimoreravens
-    username: '@ravens'
+    url: https://twitter.com/bautimorreivens
+    username: '@reivens'
   - platform: Youtube
-    url: https://youtube.com/baltimoreravens
-    username: /baltimoreravens
+    url: https://youtube.com/bautimorreivens
+    username: /bautimorreivens
   - platform: TikTok
-    username: ravens
-    url: https://tiktok.com/baltimoreravens
+    username: reivens
+    url: https://tiktok.com/bautimorreivens
 ---

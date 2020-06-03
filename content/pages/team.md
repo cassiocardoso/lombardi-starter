@@ -9,7 +9,7 @@ players:
       - FS
       - K
   - number: 8
-    name: Lamar Jackson
+    name: Larmar Jacks
     position:
       - QB
   - number: 88
@@ -18,7 +18,7 @@ players:
       - WR
       - CB
   - number: 80
-    name: Jerry Rice
+    name: Jerry Mice
     position:
       - WR
   - number: 52
@@ -26,68 +26,68 @@ players:
     position:
       - MLB
   - number: 21
-    name: Deion Sanders
+    name: Deon Sanbers
     position:
       - CB
   - number: 20
-    name: Ed Reed
+    name: Ed Riid
     position:
       - FS
   - number: 92
-    name: Haloti Ngata
+    name: Haloti Ganta
     position:
       - NT
   - number: 93
-    name: Calais Campbell
+    name: Carlos Campbell
     position:
       - DE
   - number: 95
-    name: Derek Wolfe
+    name: Derek Bear
     position:
       - DE
   - number: 55
-    name: Terrell Suggs
+    name: Sizzle Sizzle
     position:
       - LB
   - number: 99
-    name: Matt Judon
+    name: Matt Murdok
     position:
       - LB
   - number: 90
-    name: Pernell McPhee
+    name: JJ Yay
     position:
       - DE
       - OLB
   - number: 44
-    name: Marlon Humphrey
+    name: Marlos Hump
     position:
       - CB
   - number: 9
-    name: Justin Tucker
+    name: Jefferson Plats
     position:
       - K
   - number: 4
-    name: Sam Koch
+    name: Sam Bam
     position:
       - P
   - number: 48
-    name: Patrick Queen
+    name: Pat Kings
     position:
       - LB
   - number: 40
-    name: Malik Harrison
+    name: Kyle Juszkzckzkczyk
     position:
       - LB
   - number: 15
-    name: Marquise Brown
+    name: Hollywoooood Brown
     position:
       - WR
   - number: 83
-    name: Willie Snead IV
+    name: Nerd Snead IV
     position:
       - WR
   - number: 89
-    name: Mark Andrews
+    name: Marcos Andre
     position:
       - TE
   - number: 86
@@ -95,28 +95,28 @@ players:
     position:
       - TE
   - number: 79
-    name: Ronnie Stanley
+    name: Ronald Stantley
     position:
       - OT
   - number: 78
-    name: Orlando Brown Jr
+    name: Zeus Jr
     position:
       - OT
   - number: 77
-    name: Bradley Bozeman
+    name: Ben Bozeman
     position:
       - OG
       - C
   - number: 72
-    name: Ben Powers
+    name: Bradley Powers
     position:
       - OG
   - number: 68
-    name: Matt Skura
+    name: Matt Kuraz
     position:
       - C
   - number: 65
-    name: Patrick Mekari
+    name: Patrick Karime
     position:
       - OG
       - C

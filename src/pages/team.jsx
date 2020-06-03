@@ -5,6 +5,7 @@ import tw from 'twin.macro'
 
 import Layout from '../layout'
 import { Container } from '../components/Container'
+import { Hero } from '../components/Hero'
 import { SectionTitle } from '../components/SectionTitle'
 import { Table, TableHead, TableBody } from '../components/Table'
 
@@ -17,10 +18,11 @@ const TableWrapper = styled.div`
 `
 
 const TeamPage = ({ data, location }) => {
-  const { players, coaches } = data.markdownRemark.frontmatter
+  const { title, players, coaches } = data.markdownRemark.frontmatter
 
   return (
     <Layout location={location}>
+			<Hero title={title} />
       <Container>
 				<ContentWrapper>
 					<SectionTitle>Players</SectionTitle>
@@ -91,6 +93,7 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { regex: "/team/" } }) {
       id
       frontmatter {
+				title
         players {
           number
           name
