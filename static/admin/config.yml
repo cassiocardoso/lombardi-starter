@@ -54,7 +54,12 @@ collections:
             fields:
               - label: "Number"
                 name: "number"
-                widget: "string"
+                widget: "number"
+                default: 0
+                valueType: "int"
+                min: 0
+                max: 99
+                step: 1
               - label: "Name"
                 name: "name"
                 widget: "string"
