@@ -2,8 +2,9 @@ import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 
 import { SectionTitle } from '../SectionTitle'
+import { Table, TableHead, TableBody } from '../Table/Stripped'
 
-import { Wrapper, TableWrapper, Table, TableHead, TableBody, TeamIcon } from './Standings.styles'
+import { Wrapper, TableWrapper, TeamIcon } from './Standings.styles'
 
 export const Standings = () => {
   const {
