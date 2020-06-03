@@ -1,4 +1,3 @@
-// Gatsby supports TypeScript natively!
 import React from 'react'
 import { graphql } from 'gatsby'
 import tw from 'twin.macro'
