@@ -9,7 +9,7 @@ import { Map } from '../components/Map'
 import { SectionTitle } from '../components/SectionTitle'
 
 const SectionWrapper = styled.section`
-  ${tw`text-gray-700 relative mt-6 mb-24 w-full`}
+  ${tw`text-gray-700 relative mt-12 mb-24 w-full`}
 `
 
 const ContentWrapper = styled.div`
