@@ -2,16 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import tw from 'twin.macro'
 
-import theme from '../../theme'
-
 const BaseButton = styled.button`
-  ${tw`bg-transparent font-semibold hover:text-white py-2 px-4 border hover:border-transparent rounded`}
-	border-color: ${theme.colors.primary};
-	color: ${theme.colors.primary};
-
-	&:hover {
-		background-color: ${theme.colors.primary}
-	}
+  ${tw`bg-transparent border-blue-500 text-blue-500 font-semibold hover:text-white py-2 px-4 border hover:bg-blue-500 hover:border-transparent rounded`}
 `
 
 export const Button = ({ children }) => {

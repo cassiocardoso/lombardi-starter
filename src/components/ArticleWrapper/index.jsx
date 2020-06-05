@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import tw from 'twin.macro'
 import Disqus from 'react-disqus-comments'
 
-import theme from '../../theme'
 import config from '../../../lombardi.config'
 
 const StyledArticle = styled.article`
@@ -34,11 +33,7 @@ const Nav = styled.nav`
 `
 
 const NavLink = styled(Link)`
-  ${tw`h-full bg-white flex items-center border-gray-200 border p-4 rounded-lg hover:text-white`}
-
-  &:hover {
-    background-color: ${theme.colors.primary};
-  }
+  ${tw`h-full bg-white flex items-center border-gray-200 border p-4 rounded-lg hover:bg-blue-500 hover:text-white`}
 `
 
 const Text = styled.span`

@@ -1,11 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import { lighten } from 'polished'
 import tw from 'twin.macro'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
-
-import theme from '../../theme'
 
 const NavWrapper = styled.div`
   ${tw`flex w-full justify-center my-12`}
@@ -16,12 +13,7 @@ const NavContainer = styled.div`
 `
 
 const NavLink = styled(Link)`
-  ${tw`h-full flex items-center p-4 hover:text-white`}
-
-	&:hover {
-		background-color: ${lighten(0.2, theme.colors.primary)};
-		border-color: ${lighten(0.2, theme.colors.primary)};
-	}
+  ${tw`h-full flex items-center p-4 hover:bg-blue-500 hover:border-blue-500 hover:text-white`}
 
   &:not(:last-of-type) {
     ${tw`border-r border-gray-200`}
@@ -36,9 +28,7 @@ const NavLink = styled(Link)`
   }
 
   &.active {
-    ${tw`text-white`}
-		background-color: ${theme.colors.primary};
-		border-color: ${theme.colors.primary}
+    ${tw`bg-blue-500 border-blue-500 text-white`}
   }
 
   &.disabled {
