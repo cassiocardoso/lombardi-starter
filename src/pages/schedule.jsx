@@ -19,7 +19,6 @@ const TableWrapper = styled.div`
 `
 
 const SchedulePage = ({ data, location }) => {
-  console.log('schedule page data >>>', data)
   const { matches } = data.markdownRemark.frontmatter
 
   return (
