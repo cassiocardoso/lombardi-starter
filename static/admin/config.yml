@@ -123,6 +123,9 @@ collections:
         label: "Social Profiles"
         name: "widget-social-profiles"
         fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
           - label: "Profiles"
             name: "profiles"
             widget: "list"
@@ -139,6 +142,9 @@ collections:
         label: "Standings"
         name: "widget-standings"
         fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
           - label: "Teams"
             name: "teams"
             widget: "list"
@@ -155,6 +161,9 @@ collections:
         label: "Recent Matches"
         name: "widget-recent-matches"
         fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
           - label: "Recent Matches"
             name: "matches"
             widget: "list"

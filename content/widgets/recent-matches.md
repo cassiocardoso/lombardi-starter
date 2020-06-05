@@ -1,4 +1,5 @@
 ---
+title: 'Recent Matches'
 matches:
   - awayTeamIcon: /img/houston-texans.png
     stadium: M&T Bank Stadium

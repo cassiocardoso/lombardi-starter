@@ -18,12 +18,13 @@ import {
 export const SocialBanners = () => {
   const {
     markdownRemark: {
-      frontmatter: { profiles },
+      frontmatter: { profiles, title },
     },
   } = useStaticQuery(graphql`
     query {
       markdownRemark(fields: { slug: { regex: "/social-profiles/" } }) {
         frontmatter {
+          title
           profiles {
             url
             username
@@ -36,7 +37,7 @@ export const SocialBanners = () => {
 
   return (
     <section>
-      <SectionTitle>Follow us!</SectionTitle>
+      <SectionTitle>{title}</SectionTitle>
       <BannersWrapper>
         {profiles.map(profile => (
           <BannerWrapper key={profile.url}>

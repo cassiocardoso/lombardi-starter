@@ -24,12 +24,13 @@ import {
 export const RecentMatches = ({ posts }) => {
   const {
     markdownRemark: {
-      frontmatter: { matches },
+      frontmatter: { matches, title },
     },
   } = useStaticQuery(graphql`
     query {
       markdownRemark(fields: { slug: { regex: "/recent-matches/" } }) {
         frontmatter {
+          title
           matches {
             awayTeamIcon
             stadium
@@ -55,7 +56,7 @@ export const RecentMatches = ({ posts }) => {
 
   return (
     <Wrapper>
-      <SectionTitle>Recent Matches</SectionTitle>
+      <SectionTitle>{title}</SectionTitle>
       <MatchesWrapper className={`${isLargeScreen(windowWidth) ? 'mobile' : ''}`}>
         {matches.map(match => (
           <MatchBox

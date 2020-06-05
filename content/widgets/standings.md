@@ -1,4 +1,5 @@
 ---
+title: 'Standings'
 teams:
   - position: 1
     wins: 5

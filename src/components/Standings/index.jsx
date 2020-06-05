@@ -9,12 +9,13 @@ import { Wrapper, TableWrapper, TeamIcon } from './Standings.styles'
 export const Standings = () => {
   const {
     markdownRemark: {
-      frontmatter: { teams },
+      frontmatter: { teams, title },
     },
   } = useStaticQuery(graphql`
     query {
       markdownRemark(fields: { slug: { regex: "/standings/" } }) {
         frontmatter {
+          title
           teams {
             position
             wins
@@ -33,7 +34,7 @@ export const Standings = () => {
 
   return (
     <div>
-      <SectionTitle>Standings</SectionTitle>
+      <SectionTitle>{title}</SectionTitle>
       <Wrapper>
         <TableWrapper>
           <Table>

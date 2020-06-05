@@ -1,4 +1,5 @@
 ---
+title: 'Follow Us!'
 profiles:
   - platform: Facebook
     url: https://facebook.com/bautimorreivens
