@@ -2,7 +2,15 @@ import React, { PureComponent, Fragment } from 'react'
 
 import config from '../../../lombardi.config'
 
-import { FormWrapper, FormGroup, Label, Input, Textarea, Submit, ContentWrapper } from './ContactForm.styles'
+import {
+  FormWrapper,
+  FormGroup,
+  Label,
+  Input,
+  Textarea,
+  Submit,
+  ContentWrapper,
+} from './ContactForm.styles'
 
 export class ContactForm extends PureComponent {
   state = {
@@ -42,7 +50,11 @@ export class ContactForm extends PureComponent {
           <Fragment>
             <h2>Contact</h2>
             <p>Use the form below to send us your message</p>
-            <form onSubmit={this.submitForm} action={`https://formspree.io/${config.formspreeId}`} method="POST">
+            <form
+              onSubmit={this.submitForm}
+              action={`https://formspree.io/${config.formspreeId}`}
+              method="POST"
+            >
               <FormGroup>
                 <Label htmlFor="name">Name</Label>
                 <Input type="text" id="name" name="name" />

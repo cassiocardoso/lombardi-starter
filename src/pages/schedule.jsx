@@ -24,7 +24,7 @@ const SchedulePage = ({ data, location }) => {
 
   return (
     <Layout location={location}>
-			<Hero />
+      <Hero />
       <Container>
         <ContentWrapper>
           <SectionTitle>Schedule</SectionTitle>
@@ -43,12 +43,30 @@ const SchedulePage = ({ data, location }) => {
               <TableBody>
                 {matches.map(match => (
                   <tr>
-                    <td><span>League</span>{match.league}</td>
-                    <td><span>Home team</span>{match.homeTeam}</td>
-                    <td><span>Score</span>{`${match.homeTeamScore}x${match.awayTeamScore}`}</td>
-                    <td><span>Away team</span>{match.awayTeam}</td>
-                    <td><span>Date</span>{formatDatetime(match.date)}</td>
-                    <td><span>Stadium</span>{match.stadium}</td>
+                    <td>
+                      <span>League</span>
+                      {match.league}
+                    </td>
+                    <td>
+                      <span>Home team</span>
+                      {match.homeTeam}
+                    </td>
+                    <td>
+                      <span>Score</span>
+                      {`${match.homeTeamScore}x${match.awayTeamScore}`}
+                    </td>
+                    <td>
+                      <span>Away team</span>
+                      {match.awayTeam}
+                    </td>
+                    <td>
+                      <span>Date</span>
+                      {formatDatetime(match.date)}
+                    </td>
+                    <td>
+                      <span>Stadium</span>
+                      {match.stadium}
+                    </td>
                   </tr>
                 ))}
               </TableBody>
