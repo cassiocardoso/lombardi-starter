@@ -4,7 +4,7 @@
 
 > A starter website for football teams
 
-**DEMO:** [Check the working demo](https://lombardi-starter.netlify.app/)
+**DEMO:** [Check the working demo here](https://lombardi-starter.netlify.app/)
 
 ## Features
 
@@ -35,10 +35,10 @@ For detailed docs, check the [starter documentation](./docs/README.md).
 
 ### Contributors
 
-Contributors of any kind are welcome, please check our [contributing guideline]().
+Contributors of any kind are welcome, please check our [contributing guideline](./CONTRIBUTING.md) and read our [code of conduct](./CODE_OF_CONDUCT.md).
 
 ### License
 
 This project is licensed under the MIT license, Copyright (c) 2020 Cassio Cardoso.
 
-For more information see LICENSE.md.
+For more information see [LICENSE](./LICENSE).
