@@ -6,6 +6,8 @@
 
 **DEMO:** [Check the working demo here](https://lombardi-starter.netlify.app/)
 
+#### [Check the portuguese docs here](./docs/pt-br/README.md)
+
 ## Features
 
 <dl>
